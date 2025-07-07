@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interior</title>
+  <title>Interior - Crop Top</title>
   <style>
     body {
-      background-color: #fef7ff;
+      background-color: #f0efe9;
       margin: 0;
       padding: 0;
       font-family: sans-serif;
     }
 
     .image-wrapper {
+      height: 550px;          /* ✅ 이미지가 보일 높이 */
+      overflow: hidden;       /* ✅ 나머지 영역 잘리도록 설정 */
       margin-top: 125px;
-      height: 550px;       /* ← 하단을 자르고 싶은 높이로 조절 */
-      overflow: hidden;    /* ← 잘라내기 핵심 */
     }
 
     .image-wrapper img {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 0;
-      box-shadow: none;
+      transform: translateY(-100px); /* ✅ 상단 잘림 정도 조절 */
     }
   </style>
 </head>
