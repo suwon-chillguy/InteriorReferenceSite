@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Only</title>
+  <title>Full Width Image</title>
   <style>
     body {
-      background-color: #f0efe9; /* ← 배경색 변경 가능 */
+      background-color: #f0efe9; /* ← 원하는 배경색으로 변경 가능 */
       margin: 0;
       padding: 0;
       font-family: sans-serif;
@@ -14,11 +14,11 @@
 
     img {
       display: block;
-      width: 400px;              /* 가로 크기 설정 */
-      height: auto;              /* 비율 유지 */
-      margin: 130px auto 0 auto; /* ← 상단 마진 130px, 가운데 정렬 */
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-      /* border-radius 제거됨 */
+      width: 100%;              /* 좌우 여백 없이 꽉 차게 */
+      height: auto;             /* 비율 유지 */
+      margin-top: 125px;        /* 상단 마진만 줌 */
+      box-shadow: none;         /* 그림자 없음 */
+      border-radius: 0;         /* 모서리 둥글지 않게 */
     }
   </style>
 </head>
