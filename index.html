@@ -7,22 +7,22 @@
   <style>
     body {
       font-family: sans-serif;
-      background-color: #dcc1a4; /* 연한 민트 배경색 */
+      background-color: #dcc3a4;
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 00px;
-      border-radius: 0px;
+      padding: 0;
     }
+
     img {
-      width: 100%;
-      max-width: 100%;
-      margin-top: 130px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      width: 400px;          /* ✅ 가로폭 조절 */
+      height: auto;          /* ✅ 세로 비율 유지 */
+      margin: 120px auto 20px auto;  /* ✅ 가운데 정렬 및 위아래 여백 */
+      border-radius: 0px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
       display: block;
     }
@@ -31,7 +31,6 @@
 <body>
   <div class="container">
     <img src="https://i.imgur.com/3KIDseo.jpeg" alt="interior reference 1" loading="lazy" />
-    <!-- <img src="https://i.imgur.com/gnl6DyS.jpeg" alt="interior reference 2" loading="lazy" /> -->
   </div>
 </body>
 </html>
